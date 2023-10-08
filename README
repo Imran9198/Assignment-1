@@ -24,4 +24,4 @@ Note – You can submit whatever progress you have made at the end of 3 days fro
 •	pm2  (to run application) 
 •	pm2 start npm --name nextjs-app -- run start -- -p 3000 (Execute the below code to run Next.js with PM2  (security group should allow HTTP on port 3000))
 •	copy instance public ip and add port no. 3000	
- http://52.66.176.66:3000/ 
+http://13.232.20.63:3000/
