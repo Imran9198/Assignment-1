@@ -1,1 +1,27 @@
 # Assignments1
+Assignment for Cloud Engineer
+
+1.	Find a publicly available sample frontend application (e.g., Next.js or Vue.js), host it on an AWS EC2 instance (Linux OS), and set up a reverse proxy using a web server (Nginx or Apache). No backend is needed for this task.
+2.	Create a README file in GIT repository detailing the steps you took to complete this task with screen shots.
+
+Note – You can submit whatever progress you have made at the end of 3 days from the date of receiving this assignment. Completing this assignment increases your chances of getting hired.
+ 
+# Assignments1
+•	Copy git repository
+•	Create EC2 instance on aws portal
+•	select Ubuntu 22.04 LTS OS ,t2 micro,with default vpc
+•	create .ppk key , create security group with all traffic allow inbond rule.
+•	ssh to public ip of EC2 instance with .ppk file
+•	 sudo apt update (to ensure your instance has the latest updates.)
+•	 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash – (copy file from web site)
+•	sudo apt-get install -y nodejs (install nodejs)
+•	node –v (check nodejs version)
+•	git clone https://github.com/Imran9198/assignment-4.git  (Clone your Nextjs App from GitHub)
+•	cd sample-nextjs-app/  (change directory application)
+•	npm install (Install required node modules)
+•	npm run build (to make application ready)
+•	sudo npm install pm2 –g  (Install PM2 using the below command)
+•	pm2  (to run application) 
+•	pm2 start npm --name nextjs-app -- run start -- -p 3000 (Execute the below code to run Next.js with PM2  (security group should allow HTTP on port 3000))
+•	copy instance public ip and add port no. 3000	
+ http://52.66.176.66:3000/ 
